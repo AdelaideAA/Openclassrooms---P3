@@ -1,0 +1,11 @@
+#explorer{
+    background: $white-cream;
+    text-align: center;
+    padding: 12px;
+    & h4{
+        font-weight: lighter;
+    }
+    & .btn-pink{
+        @include btn-pink;
+    }
+}

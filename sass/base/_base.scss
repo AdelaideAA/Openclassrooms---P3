@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: map-get($map: $font-size, $key:h3 );
+}
+h4{
+    font-size:map-get($map: $font-size, $key:h4 );
+}

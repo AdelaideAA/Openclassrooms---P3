@@ -1,0 +1,11 @@
+#place{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    gap: 15px;
+    font-size: 1.20rem;
+    & h2{
+        font-size: 1.15rem;
+    }
+}

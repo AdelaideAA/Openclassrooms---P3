@@ -1,20 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0px;
-}
-
-header{
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
-}
-
-main{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/place";
+@import "./pages/explorer";
+@import "./pages/start";
