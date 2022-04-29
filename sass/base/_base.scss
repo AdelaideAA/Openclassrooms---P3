@@ -15,3 +15,13 @@ h3{
 h4{
     font-size:map-get($map: $font-size, $key:h4 );
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.conteiner{
+    padding-left: 19px;
+    padding-right: 19px;
+}
