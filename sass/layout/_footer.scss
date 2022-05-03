@@ -17,7 +17,7 @@ footer{
     li{
         list-style-type: none;
         margin: 5px 0px;
-        font-size: 1.1rem;
+        font-size: map-get($map: $font-size, $key: component-title);
     }
     .footer__ico{
         margin-right: 10px;

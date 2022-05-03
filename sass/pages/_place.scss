@@ -2,10 +2,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 3px;
     background-color: #EAEAEA;
     font-size: 1.20rem;
     .place__city{
-        font-size: 1.15rem;
+        font-size: 20px;
         border: none;
         color: black;
         background-color: #EAEAEA;

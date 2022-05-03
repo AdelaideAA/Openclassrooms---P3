@@ -1,8 +1,7 @@
 .card {
-    position: relative;
     @include heart;
     .card__ico {
-        right: 7%;
+        right: 5%;
         bottom: 32px;
         
     }

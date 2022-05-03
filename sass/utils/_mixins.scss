@@ -1,6 +1,6 @@
 /*------------------------------Mise en page--------------------------*/
-@mixin desktop-only{
-    @media screen and (min-width:992px){
+@mixin desktop-only {
+    @media screen and (min-width:992px) {
         @content;
     }
 }
@@ -10,22 +10,40 @@
     height: 63px;
     display: flex;
     align-items: center;
-    @include desktop-only{
+
+    @include desktop-only {
         height: 80px;
     }
-    .header__logo{
+
+    .header__logo {
         width: 165px;
         margin: auto;
-        @include desktop-only{
+
+        @include desktop-only {
             width: 200px;
-        }    
+        }
     }
+}
+
+@mixin box-card {
+    @include desktop-only {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@mixin layout-card {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    margin: 18px 0px;
 }
 
 /*-----------------------composants et animations----------------------*/
 @mixin btn-pink {
     display: inline-block;
-    font-size: map-get($map: $font-size, $key: basic );
+    font-size: map-get($map: $font-size, $key: component-title);
     box-shadow: $box-shadow;
     background: $color-gradient;
     border-radius: 25.5px;
@@ -37,26 +55,25 @@
     border: none;
     margin-bottom: 58px;
     transition: all 250ms;
-    &:hover{
-       box-shadow: $hover-shadow; 
-       opacity: 0.85;
+
+    &:hover {
+        box-shadow: $hover-shadow;
+        opacity: 0.85;
     }
 }
 
-@mixin heart{
+@mixin heart {
     &__ico {
         position: absolute;
         font-size: 1.5rem;
-        background-color: white;
 
         &:hover {
             opacity: 0;
         }
     }
 
-    &__ico--active{
+    &__ico--active {
         position: absolute;
-        transform: translateX (126%);
         opacity: 0;
         transition: opacity 1s;
         background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
