@@ -13,22 +13,24 @@
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood.png" alt ="logo-omyfood" class="logo">
+        <img src="images/logo/ohmyfood.png" alt="logo-omhyfood" class="header__logo">
     </header>
 
     <main>
 
         <div id="place">
             <i class="fa-solid fa-location-dot"></i>
-            <h2>Paris, Belleville</h2>
+            <form method="post"action="#">
+                <p><input type="text" placeholder="Paris, Belleville" class="place__city"></p>
+            </form>
         </div>
 
         <section id="explorer">
             <h1>Réservez le menu qui vous convient</h1>
             <h4>Découvrez des restaurants d'exception, séléctionnés par nos soins</h4>
-            
-                <button class="btn-pink">Explorer nos restaurants</button>
-            
+
+            <button class="btn-pink">Explorer nos restaurants</button>
+
         </section>
         <div class="conteiner">
             <section id="start">
@@ -48,13 +50,14 @@
                             <div class="card__image">
                                 <img src="images/restaurants/la-palette-du-gout.jpg"
                                     alt="photo du restaurant la palette du goût">
-                                <p class="image__new">Nouveau</p>
+                                <span class="image__new">Nouveau</span>
                             </div>
                             <h4 class="card__title">La palette du goût</h4>
                             <p class="card__byline">Ménilmontant</p>
+                            <i class="fa-regular fa-heart card__ico"></i>
+                            <i class="fa-solid fa-heart card__ico card__ico--active"></i>
                         </a>
-                        <i class="fa-regular fa-heart card__ico"></i>
-                        <i class="fa-solid fa-heart card__ico card__ico--active"></i>
+
                     </article>
 
                     <article class="card">
@@ -62,7 +65,7 @@
                             <div class="card__image">
                                 <img src="images/restaurants/la-note-enchantee.jpg"
                                     alt="photo du restaurant la palette du goût">
-                                <p class="image__new">Nouveau</p>
+                                <span class="image__new">Nouveau</span>
                             </div>
                             <h4 class="card__title">La note enchantée</h4>
                             <i class="fa-regular fa-heart card__ico"></i>
@@ -76,7 +79,6 @@
                             <div class="card__image">
                                 <img src="images/restaurants/a-la-française.jpg"
                                     alt="photo du restaurant la palette du goût">
-                                <p class="image__new">Nouveau</p>
                             </div>
                             <h4 class="card__title">À la française</h4>
                             <i class="fa-regular fa-heart card__ico"></i>
@@ -90,7 +92,6 @@
                             <div class="card__image">
                                 <img src="images/restaurants/le-delice-des-sens.jpg"
                                     alt="photo du restaurant la palette du goût">
-                                <p class="image__new">Nouveau</p>
                             </div>
                             <h4 class="card__title">Le délice des sens</h4>
                             <i class="fa-regular fa-heart card__ico"></i>

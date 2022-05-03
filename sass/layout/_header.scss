@@ -1,25 +1,11 @@
 header{
-    height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include desktop-only{
-        height: 80px;
-    }
-    .logo{
-        width: 165px;
-        @include desktop-only{
-            width: 200px;
-        }    
-     }
+    @include header;
 }
 
-// font-family: 'Shrikhand', cursive;
-//text-align: center;
-//box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
-//position: relative;
-//& h1{
-    //margin: 0px;
-    //padding: 0.8rem;
-    //font-size: 2rem;
-//}
+
+.header__menu{
+    display: revert;
+    .conteiner{
+        @include header;   
+    }
+}

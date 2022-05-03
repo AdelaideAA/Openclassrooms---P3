@@ -1,0 +1,15 @@
+.menu__title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    & h1{
+        margin-top: 36px;
+        border-radius: 38px 38px 0px 0px;
+    }
+    @include heart;
+    & .card__ico{
+        right: 0px;
+    }
+    
+}
+

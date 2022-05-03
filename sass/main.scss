@@ -2,10 +2,13 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./components/home-card";
 @import "./components/animation-heart";
 @import "./layout/header";
+@import "./layout/layout-menu";
+@import "./layout/menu-img";
+@import "./layout/menu-card";
 @import "./layout/footer";
 @import "./pages/place";
 @import "./pages/explorer";
 @import "./pages/start";
+@import "./pages/home-card";
