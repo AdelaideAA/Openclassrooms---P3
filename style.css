@@ -280,7 +280,11 @@ header .header__logo {
 .menu-card {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  height: 70px;
   width: 100%;
   border-radius: 15px;
   box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
@@ -289,24 +293,36 @@ header .header__logo {
 @media screen and (min-width: 992px) {
   .menu-card {
     width: 30%;
-    height: 70px;
     position: relative;
   }
 }
-.menu-card:hover > .check {
-  transform: scaleX(1);
-  /*.card__price{
-      transform: translateX(-60px);
-  }*/
+.menu-card__title {
+  margin: 0.2rem 0.6rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 85%;
+  transition: all 500ms ease-out 50ms;
 }
-.menu-card:hover > .check span {
-  transform: rotate(360deg);
+.menu-card__byline {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  margin: 0.2rem 0.6rem;
+  transition: all 500ms ease-out 50ms;
 }
-.menu-card .check {
+.menu-card__price {
+  margin: 0.2rem 0;
+  font-weight: bold;
+  transform: translate(-5px, 10px);
+  transition: all 500ms ease-out 50ms;
+}
+.menu-card__check {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  width: 20%;
+  width: 61px;
   height: 100%;
   background-color: #99E2D0;
   transform-origin: right;
@@ -317,7 +333,7 @@ header .header__logo {
   justify-content: center;
   align-items: center;
 }
-.menu-card .check span {
+.menu-card__check span {
   display: inline-block;
   width: 21px;
   height: 22px;
@@ -328,26 +344,20 @@ header .header__logo {
   font-size: 16px;
   transition: transform 500ms ease-out 50ms;
 }
-.menu-card .card__price {
-  display: block;
-  align-self: flex-end;
-  margin: 10px;
-  font-weight: bold;
-  overflow: hidden;
-  transition: transform 500ms ease-out 50ms;
+.menu-card:hover > .menu-card__check {
+  transform: scaleX(1);
 }
-.menu-card .card__title {
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.menu-card:hover > .menu-card__check span {
+  transform: rotate(360deg);
 }
-.menu-card .card__byline {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-shrink: 3;
+.menu-card:hover > .menu-card__price {
+  transform: translate(-60px, 13px);
 }
-
-.menu-card:hover > .card__price {
-  transform: translateX(-80px);
+.menu-card:hover > .menu-card__title {
+  width: 80%;
+}
+.menu-card:hover > .menu-card__byline {
+  max-width: 65%;
 }
 
 footer {
