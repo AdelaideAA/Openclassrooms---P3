@@ -1,3 +1,4 @@
+
 .menu-card {
     position: relative;
     display: flex;
@@ -6,7 +7,9 @@
     justify-content: center;
     background-color: white;
     height: 70px;
-    //align-content: flex-start;
+    opacity: 0;
+    animation: entry-menu-card 1500ms ease-in-out both;
+    margin: 14px 0px;
     @include layout-card;
 
     @include desktop-only {
@@ -21,7 +24,6 @@
         white-space: nowrap;
         overflow: hidden;
         width: 85%;
-        transition: all 500ms ease-out 50ms;
     }
 
     &__byline {
@@ -31,14 +33,16 @@
         overflow: hidden;
         width: 80%;
         margin: 0.2rem 0.6rem;
-        transition: all 500ms ease-out 50ms;
+        transition: all 500ms ease-in-out;
     }
 
     &__price {
         margin: 0.2rem 0;
         font-weight: bold;
-        transform: translate(-5px, 10px);
-        transition: all 500ms ease-out 50ms;
+        transform: translate(-5px, 13px);
+        transition: all 500ms ease-in-out;
+        position: absolute;
+        right: 5px;
     }
 
 

@@ -4,6 +4,25 @@
     margin-top: -36px;
     position: relative;
     z-index: 1;
+    & .conteiner-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 58px;
+    }
+    & .btn-pink{
+        @include btn-pink;
+
+    }
+}
+
+.menu__image{
+    img{
+        width: 100%;
+        max-height:50vh;
+        object-fit: cover;
+       
+    }
 }
 
 .menu__title{
@@ -25,9 +44,10 @@
 
 .dish{
     h2{
-        line-height: 1.5;
+        line-height: 2.5;
         box-shadow: -9px 16px 0px -9px $tertiary-color;
         display: inline;
         font-size: map-get($map: $font-size, $key: component-title);
+        
     }
 }
