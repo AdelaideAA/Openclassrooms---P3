@@ -29,13 +29,14 @@
     display: flex;
     align-items: center;
     position: relative;
-    & h1{
+    & h2{
         margin-top: 36px;
         border-radius: 38px 38px 0px 0px;
         font-family: 'Shrikhand', cursive;
         font-size: map-get($map: $font-size, $key: restaurant-name);
     }
     @include heart;
+    
     & .card__ico{
         right: 0px;
         margin-top: 15px;
@@ -44,7 +45,7 @@
 }
 
 .dish{
-    h2{
+    h3{
         line-height: 2.5;
         box-shadow: -9px 16px 0px -9px $tertiary-color;
         display: inline;

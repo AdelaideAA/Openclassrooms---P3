@@ -5,6 +5,7 @@ header{
 
 .header__menu{
     display: revert;
+    font-family: 'Shrikhand', cursive;
     .conteiner{
         @include header;   
     }

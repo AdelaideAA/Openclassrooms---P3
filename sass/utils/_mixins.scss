@@ -60,7 +60,7 @@
         position: absolute;
         font-size: 1.5rem;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             opacity: 0;
         }
     }
@@ -73,7 +73,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             opacity: 1;
         }
     }

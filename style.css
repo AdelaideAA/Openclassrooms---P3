@@ -52,7 +52,7 @@ a {
   position: absolute;
   font-size: 1.5rem;
 }
-.card__ico:hover {
+.card__ico:hover, .card__ico:focus, .card__ico:active {
   opacity: 0;
 }
 .card__ico--active {
@@ -63,7 +63,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__ico--active:hover {
+.card__ico--active:hover, .card__ico--active:focus, .card__ico--active:active {
   opacity: 1;
 }
 .card .card__ico {
@@ -131,6 +131,7 @@ header .header__logo {
 
 .header__menu {
   display: revert;
+  font-family: "Shrikhand", cursive;
 }
 .header__menu .conteiner {
   height: 63px;
@@ -197,7 +198,7 @@ header .header__logo {
   align-items: center;
   position: relative;
 }
-.menu__title h1 {
+.menu__title h2 {
   margin-top: 36px;
   border-radius: 38px 38px 0px 0px;
   font-family: "Shrikhand", cursive;
@@ -207,7 +208,7 @@ header .header__logo {
   position: absolute;
   font-size: 1.5rem;
 }
-.menu__title__ico:hover {
+.menu__title__ico:hover, .menu__title__ico:focus, .menu__title__ico:active {
   opacity: 0;
 }
 .menu__title__ico--active {
@@ -218,7 +219,7 @@ header .header__logo {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu__title__ico--active:hover {
+.menu__title__ico--active:hover, .menu__title__ico--active:focus, .menu__title__ico--active:active {
   opacity: 1;
 }
 .menu__title .card__ico {
@@ -226,7 +227,7 @@ header .header__logo {
   margin-top: 15px;
 }
 
-.dish h2 {
+.dish h3 {
   line-height: 2.5;
   box-shadow: -9px 16px 0px -9px #99E2D0;
   display: inline;
