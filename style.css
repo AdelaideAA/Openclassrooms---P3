@@ -101,69 +101,61 @@ a {
       }
 
 }*/
-/*.load {
-    width: 100%;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:90px;
-    position: absolute;
-    background-color: white;
+.load {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 1;
+  animation: load 1100ms forwards 2000ms ease-in-out;
+  transform-origin: top;
+}
+.load__bar {
+  background-color: #99E2D0;
+  height: 25%;
+  width: 3vh;
+  border-radius: 25.5px;
+  animation: bar 1100ms forwards 2 ease-in-out;
+}
+.load__bar--1 {
+  animation-delay: 100ms;
+}
+.load__bar--2 {
+  animation-delay: 300ms;
+}
+.load__bar--3 {
+  animation-delay: 550ms;
+}
+.load__bar--4 {
+  animation-delay: 850ms;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+
+@keyframes bar {
+  0% {
+    transform: scalex(1);
     opacity: 0.9;
-    z-index: 1;
-
-    &__bar {
-        background-color: $tertiary-color;
-        height: 25%;
-        width: 3vh;
-        border-radius: 25.5px;
-        animation: bar 2100ms forwards 2 ease-in-out;
-        //transition: transform 600ms ease-in-out
-
-    }
-    &__bar--1{
-        animation-delay: 200ms;
-    }
-    &__bar--2{
-        animation-delay: 400ms;
-    }
-    &__bar--3{
-        animation-delay: 600ms;
-    }
-    &__bar--4{
-        animation-delay: 800ms;
-    }
-    &__bar--5{
-        animation-delay: 1000ms;
-    }
+  }
+  50% {
+    transform: scalex(1.2);
+    background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  }
+  100% {
+    transform: scalex(0);
+  }
 }
-
-@keyframes bar{
-    0% {
-        transform: scalex(1);
-        opacity: 0.9;
-    }
-    50% {
-        transform: scalex(1.2);
-        background: $color-gradient;
-
-    }
-    100% {
-        transform: scalex(1);
-        opacity: 0;
-    }
+@keyframes load {
+  to {
+    transform: scaleY(0);
+  }
 }
-
-@keyframes load{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity:0;
-        z-index: 0;;
-    }
-}*/
 header {
   height: 63px;
   display: flex;
