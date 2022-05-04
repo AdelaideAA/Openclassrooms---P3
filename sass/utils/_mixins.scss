@@ -54,11 +54,12 @@
     height: 51px;
     border: none;
     margin-bottom: 58px;
-    transition: all 250ms;
+    transition: all 250ms ease-in-out;
 
     &:hover {
         box-shadow: $hover-shadow;
         opacity: 0.85;
+        transform: scale(1.1);
     }
 }
 
@@ -75,7 +76,7 @@
     &__ico--active {
         position: absolute;
         opacity: 0;
-        transition: opacity 1s;
+        transition: opacity 500ms;
         background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
