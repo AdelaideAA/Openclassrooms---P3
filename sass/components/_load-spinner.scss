@@ -1,0 +1,112 @@
+/*<div class="load">
+        <span class="lettre">O</span>
+        <span class="lettre">h</span>
+        <span class="lettre">m</span>
+        <span class="lettre">y</span>
+        <span class="lettre">f</span>
+        <span class="lettre">O</span>
+        <span class="lettre">O</span>
+        <span class="lettre">d</span>
+        <span class="lettre">!</span>
+
+    </div>
+
+.load{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.lettre{
+    font-size: 110px;
+    font-family: 'Shrikhand', cursive;
+    display: inline-block;
+    color: black;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        //background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+        //-webkit-background-clip: text;
+        //-webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(left, #ff79da, #9356dc);
+        background: linear-gradient(to right, #ff79da, #9356dc);
+        content: '';
+        display: block;
+        mix-blend-mode: screen;
+      }
+    
+}*/
+
+/*.load {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 1;
+    
+    &__bar {
+        background-color: $tertiary-color;
+        height: 25%;
+        width: 3vh;
+        border-radius: 25.5px;
+        animation: bar 2100ms forwards 2 ease-in-out;
+        //transition: transform 600ms ease-in-out
+        
+    }
+    &__bar--1{
+        animation-delay: 200ms;
+    }
+    &__bar--2{
+        animation-delay: 400ms;
+    }
+    &__bar--3{
+        animation-delay: 600ms;
+    }
+    &__bar--4{
+        animation-delay: 800ms;
+    }
+    &__bar--5{
+        animation-delay: 1000ms;
+    }
+}
+
+@keyframes bar{
+    0% {
+        transform: scalex(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scalex(1.2);
+        background: $color-gradient;
+
+    }
+    100% {
+        transform: scalex(1);
+        opacity: 0;
+    }
+}
+
+@keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+        z-index: 0;;
+    }
+}*/
