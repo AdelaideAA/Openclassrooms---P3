@@ -277,6 +277,7 @@ header .header__logo {
 }
 .menu__title .card__ico {
   right: 0px;
+  margin-top: 15px;
 }
 
 .dish h2 {
