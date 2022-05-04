@@ -1,3 +1,6 @@
+.restaurants{
+    background-color: $white-cream;
+}
 #restaurants {
     padding-top: 30px;
     padding-bottom: 64px;
@@ -5,7 +8,11 @@
 }
 
 .box__card {
-    @include box-card;
+    @include desktop-only {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .card {
         @include layout-card;

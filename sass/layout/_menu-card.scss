@@ -10,10 +10,11 @@
     opacity: 0;
     animation: entry-menu-card 1500ms ease-in-out both;
     margin: 14px 0px;
+    cursor: pointer;
     @include layout-card;
 
     @include desktop-only {
-        width: 30%;
+
         position: relative;
     }
 
@@ -90,4 +91,15 @@
         max-width: 65%;
     }  
 
+}
+
+.dish{
+    @include desktop-only{
+       display: flex;
+       justify-content: space-between; 
+    }
+    .box-menu{
+        min-width: 30%;
+    }
+    
 }

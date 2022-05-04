@@ -11,6 +11,7 @@
     z-index: 1;
     animation: load 1100ms forwards 2000ms ease-in-out;
     transform-origin: top;
+    cursor: wait;
     
     &__bar {
         background-color: $tertiary-color;

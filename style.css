@@ -84,6 +84,7 @@ a {
   z-index: 1;
   animation: load 1100ms forwards 2000ms ease-in-out;
   transform-origin: top;
+  cursor: wait;
 }
 .load__bar {
   background-color: #99E2D0;
@@ -243,6 +244,7 @@ header .header__logo {
   opacity: 0;
   animation: entry-menu-card 1500ms ease-in-out both;
   margin: 14px 0px;
+  cursor: pointer;
   width: 100%;
   border-radius: 15px;
   box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
@@ -250,7 +252,6 @@ header .header__logo {
 }
 @media screen and (min-width: 992px) {
   .menu-card {
-    width: 30%;
     position: relative;
   }
 }
@@ -317,6 +318,16 @@ header .header__logo {
 }
 .menu-card:hover > .menu-card__byline {
   max-width: 65%;
+}
+
+@media screen and (min-width: 992px) {
+  .dish {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.dish .box-menu {
+  min-width: 30%;
 }
 
 footer {
@@ -455,6 +466,10 @@ footer .footer__ico {
 }
 .step li:hover .step__ico {
   color: #9356DC;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
 }
 
 #restaurants {
