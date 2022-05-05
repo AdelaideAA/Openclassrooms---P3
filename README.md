@@ -1,8 +1,7 @@
 # Openclassrooms---P3
 Dynamisez une page web avec des animations CSS
 
-### Lien opensource:
-      https://adelaideaa.github.io/Openclassrooms---P3/
+### Lien opensource: https://adelaideaa.github.io/Openclassrooms---P3/
 
 ### Scénario
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
