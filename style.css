@@ -78,7 +78,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 90px;
-  position: absolute;
+  position: fixed;
   background-color: white;
   opacity: 0.9;
   z-index: 1;
