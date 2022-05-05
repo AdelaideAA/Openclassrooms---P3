@@ -1,14 +1,18 @@
 #start{
     background-color: white;
-    padding-top: 30px;
+    padding-top: 25px;
     counter-reset: number;
-    font-size: map-get($map: $font-size, $key: section-title);
+    & h3{
+        font-size: map-get($map: $font-size, $key: section-title);
+    }
+    
     & ul{
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       padding:0;
       list-style-type: none;
+      margin-bottom: 50px;
     }
 }
 

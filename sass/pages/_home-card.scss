@@ -3,15 +3,18 @@
 }
 #restaurants {
     padding-top: 30px;
-    padding-bottom: 64px;
-    font-size: map-get($map: $font-size, $key: section-title);
+    padding-bottom: 46px;
+    & h3{
+        font-size: map-get($map: $font-size, $key: section-title);
+    }
+    
 }
 
 .box__card {
     @include desktop-only {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .card {

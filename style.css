@@ -52,7 +52,7 @@ a {
   position: absolute;
   font-size: 1.5rem;
 }
-.card__ico:hover, .card__ico:focus, .card__ico:active {
+.card__ico:hover, .card__ico:focus {
   opacity: 0;
 }
 .card__ico--active {
@@ -63,7 +63,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__ico--active:hover, .card__ico--active:focus, .card__ico--active:active {
+.card__ico--active:hover, .card__ico--active:focus {
   opacity: 1;
 }
 .card .card__ico {
@@ -122,6 +122,7 @@ header {
 }
 header .header__logo {
   width: 165px;
+  min-height: 31px;
   margin: auto;
 }
 @media screen and (min-width: 992px) {
@@ -146,6 +147,7 @@ header .header__logo {
 }
 .header__menu .conteiner .header__logo {
   width: 165px;
+  min-height: 31px;
   margin: auto;
 }
 @media screen and (min-width: 992px) {
@@ -165,7 +167,7 @@ header .header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 58px;
+  margin-top: 50px;
 }
 .layout-menu .btn-pink {
   display: inline-block;
@@ -179,8 +181,9 @@ header .header__logo {
   width: 220px;
   height: 51px;
   border: none;
-  margin-bottom: 58px;
+  margin-bottom: 46px;
   transition: all 250ms ease-in-out;
+  margin-bottom: 80px;
 }
 .layout-menu .btn-pink:hover {
   box-shadow: 0px 5px 23px 0px rgba(112, 112, 112, 0.9);
@@ -214,7 +217,7 @@ header .header__logo {
   position: absolute;
   font-size: 1.5rem;
 }
-.menu__title__ico:hover, .menu__title__ico:focus, .menu__title__ico:active {
+.menu__title__ico:hover, .menu__title__ico:focus {
   opacity: 0;
 }
 .menu__title__ico--active {
@@ -225,7 +228,7 @@ header .header__logo {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu__title__ico--active:hover, .menu__title__ico--active:focus, .menu__title__ico--active:active {
+.menu__title__ico--active:hover, .menu__title__ico--active:focus {
   opacity: 1;
 }
 .menu__title .card__ico {
@@ -274,7 +277,7 @@ header .header__logo {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 80%;
+  width: 73%;
   margin: 0.2rem 0.6rem;
   transition: all 500ms ease-in-out;
 }
@@ -284,7 +287,7 @@ header .header__logo {
   transform: translate(-5px, 13px);
   transition: all 500ms ease-in-out;
   position: absolute;
-  right: 5px;
+  right: 26px;
 }
 .menu-card__check {
   position: absolute;
@@ -322,10 +325,10 @@ header .header__logo {
   transform: translate(-60px, 13px);
 }
 .menu-card:hover > .menu-card__title {
-  width: 70%;
+  width: 57%;
 }
 .menu-card:hover > .menu-card__byline {
-  width: 61%;
+  width: 57%;
 }
 
 @media screen and (min-width: 992px) {
@@ -409,7 +412,7 @@ footer .footer__ico {
   width: 220px;
   height: 51px;
   border: none;
-  margin-bottom: 58px;
+  margin-bottom: 46px;
   transition: all 250ms ease-in-out;
 }
 #explorer .btn-pink:hover {
@@ -420,8 +423,10 @@ footer .footer__ico {
 
 #start {
   background-color: white;
-  padding-top: 30px;
+  padding-top: 25px;
   counter-reset: number;
+}
+#start h3 {
   font-size: 25px;
 }
 #start ul {
@@ -430,6 +435,7 @@ footer .footer__ico {
   flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 50px;
 }
 
 .step li {
@@ -482,7 +488,9 @@ footer .footer__ico {
 
 #restaurants {
   padding-top: 30px;
-  padding-bottom: 64px;
+  padding-bottom: 46px;
+}
+#restaurants h3 {
   font-size: 25px;
 }
 
@@ -490,7 +498,7 @@ footer .footer__ico {
   .box__card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .box__card .card {

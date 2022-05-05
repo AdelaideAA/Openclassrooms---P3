@@ -33,7 +33,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: 80%;
+        width: 73%;
         margin: 0.2rem 0.6rem;
         transition: all 500ms ease-in-out;
     }
@@ -44,7 +44,7 @@
         transform: translate(-5px, 13px);
         transition: all 500ms ease-in-out;
         position: absolute;
-        right: 5px;
+        right: 26px;
     }
 
 
@@ -86,10 +86,10 @@
         transform: translate(-60px, 13px);
     }
     &:hover > &__title{
-        width:70% ;
+        width:57% ;
     }
     &:hover> &__byline{
-        width: 61%;
+        width: 57%;
     }  
 
 }

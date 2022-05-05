@@ -17,6 +17,7 @@
 
     .header__logo {
         width: 165px;
+        min-height: 31px;
         margin: auto;
 
         @include desktop-only {
@@ -45,7 +46,7 @@
     width: 220px;
     height: 51px;
     border: none;
-    margin-bottom: 58px;
+    margin-bottom: 46px;
     transition: all 250ms ease-in-out;
 
     &:hover {
@@ -60,7 +61,7 @@
         position: absolute;
         font-size: 1.5rem;
 
-        &:hover, &:focus, &:active {
+        &:hover, &:focus {
             opacity: 0;
         }
     }
@@ -73,7 +74,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        &:hover, &:focus, &:active {
+        &:hover, &:focus {
             opacity: 1;
         }
     }
