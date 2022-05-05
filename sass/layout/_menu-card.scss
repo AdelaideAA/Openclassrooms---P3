@@ -25,6 +25,7 @@
         white-space: nowrap;
         overflow: hidden;
         width: 85%;
+        transition: all 500ms ease-in-out;
     }
 
     &__byline {
@@ -85,10 +86,10 @@
         transform: translate(-60px, 13px);
     }
     &:hover > &__title{
-        width:80% ;
+        width:70% ;
     }
     &:hover> &__byline{
-        max-width: 65%;
+        width: 61%;
     }  
 
 }

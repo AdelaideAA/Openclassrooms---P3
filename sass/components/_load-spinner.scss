@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:90px;
+    gap:50px;
     position: fixed;
     background-color: white;
     opacity: 0.9;
@@ -12,11 +12,12 @@
     animation: load 1100ms forwards 2000ms ease-in-out;
     transform-origin: top;
     cursor: wait;
+    padding: 25px;
     
     &__bar {
         background-color: $tertiary-color;
         height: 25%;
-        width: 3vh;
+        min-width: 25px;
         border-radius: 25.5px;
         animation: bar  1100ms forwards 2 ease-in-out;
         
