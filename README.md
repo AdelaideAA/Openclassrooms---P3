@@ -1,6 +1,8 @@
 # Openclassrooms---P3
 Dynamisez une page web avec des animations CSS
 
+![](images/Maquettes%20Ohmyfood.jpg)
+
 ### Lien opensource: https://adelaideaa.github.io/Openclassrooms---P3/
 
 ### Scénario
@@ -12,8 +14,8 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 
 Nous souhaitons ouvrir nos services à la capitale française.
 Objectifs
-+Phase 1 : Développer un site proposant le menu de 4 grands restaurants parisiens.
-+Phase 2 : Permettre la réservation en ligne et la composition de menus.
++ Phase 1 : Développer un site proposant le menu de 4 grands restaurants parisiens.
++ Phase 2 : Permettre la réservation en ligne et la composition de menus.
 
 ### Technologies
 
