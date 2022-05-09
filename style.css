@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
 @keyframes entry-menu-card {
   0% {
@@ -48,27 +49,109 @@ a {
   padding-right: 19px;
 }
 
-.card__ico {
+.explorer__btn {
+  display: inline-block;
+  font-size: 18px;
+  box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 25.5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  width: 220px;
+  height: 51px;
+  border: none;
+  margin-bottom: 46px;
+  transition: all 250ms ease-in-out;
+}
+.explorer__btn:hover {
+  box-shadow: 0px 5px 23px 0px rgba(112, 112, 112, 0.9);
+  opacity: 0.85;
+  transform: scale(1.1);
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.order__btn {
+  display: inline-block;
+  font-size: 18px;
+  box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 25.5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  width: 220px;
+  height: 51px;
+  border: none;
+  margin-bottom: 46px;
+  transition: all 250ms ease-in-out;
+  margin-bottom: 80px;
+}
+.order__btn:hover {
+  box-shadow: 0px 5px 23px 0px rgba(112, 112, 112, 0.9);
+  opacity: 0.85;
+  transform: scale(1.1);
+}
+
+.home-card .heart__ico {
   position: absolute;
   font-size: 1.5rem;
 }
-.card__ico:hover, .card__ico:focus {
+.home-card .heart__ico:hover {
   opacity: 0;
 }
-.card__ico--active {
+.home-card .heart__ico--color {
   position: absolute;
+  font-size: 1.5rem;
   opacity: 0;
   transition: opacity 500ms;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__ico--active:hover, .card__ico--active:focus {
+.home-card .heart__ico--color:hover {
   opacity: 1;
 }
-.card .card__ico {
+.home-card .heart__ico {
   right: 5%;
-  bottom: 32px;
+  bottom: 8%;
+}
+.home-card .heart__ico--color {
+  right: 5%;
+  bottom: 8%;
+}
+
+.layout-menu__title .heart__ico {
+  position: absolute;
+  font-size: 1.5rem;
+}
+.layout-menu__title .heart__ico:hover {
+  opacity: 0;
+}
+.layout-menu__title .heart__ico--color {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 500ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.layout-menu__title .heart__ico--color:hover {
+  opacity: 1;
+}
+.layout-menu__title .heart__ico {
+  right: 0px;
+  bottom: 35%;
+}
+.layout-menu__title .heart__ico--color {
+  right: 0%;
+  bottom: 35%;
 }
 
 .load {
@@ -120,42 +203,43 @@ header {
     height: 80px;
   }
 }
-header .header__logo {
+header .header-logo {
   width: 165px;
   min-height: 31px;
   margin: auto;
 }
 @media screen and (min-width: 992px) {
-  header .header__logo {
+  header .header-logo {
     width: 200px;
   }
 }
 
-.header__menu {
+.header-menu {
   display: revert;
   font-family: "Shrikhand", cursive;
 }
-.header__menu .conteiner {
+.header-menu .conteiner {
   height: 63px;
   display: flex;
   align-items: center;
 }
 @media screen and (min-width: 992px) {
-  .header__menu .conteiner {
+  .header-menu .conteiner {
     height: 80px;
   }
 }
-.header__menu .conteiner .header__logo {
+.header-menu .conteiner .header-logo {
   width: 165px;
   min-height: 31px;
   margin: auto;
 }
 @media screen and (min-width: 992px) {
-  .header__menu .conteiner .header__logo {
+  .header-menu .conteiner .header-logo {
     width: 200px;
   }
 }
 
+/*---------Menu-page- Mise en page de la page menu*/
 .layout-menu {
   background-color: #F6F6F6;
   border-radius: 38px 38px 0px 0px;
@@ -163,87 +247,48 @@ header .header__logo {
   position: relative;
   z-index: 1;
 }
-.layout-menu .conteiner-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-.layout-menu .btn-pink {
-  display: inline-block;
-  font-size: 18px;
-  box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
-  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
-  border-radius: 25.5px;
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  width: 220px;
-  height: 51px;
-  border: none;
-  margin-bottom: 46px;
-  transition: all 250ms ease-in-out;
-  margin-bottom: 80px;
-}
-.layout-menu .btn-pink:hover {
-  box-shadow: 0px 5px 23px 0px rgba(112, 112, 112, 0.9);
-  opacity: 0.85;
-  transform: scale(1.1);
-}
-
-.menu__image img {
-  width: 100%;
-  height: 255px;
-  object-fit: cover;
-}
-@media screen and (min-width: 992px) {
-  .menu__image img {
-    height: 45vh;
-  }
-}
-
-.menu__title {
+.layout-menu__title {
   display: flex;
   align-items: center;
   position: relative;
 }
-.menu__title h2 {
+.layout-menu__title h2 {
   margin-top: 36px;
   border-radius: 38px 38px 0px 0px;
   font-family: "Shrikhand", cursive;
   font-size: 32px;
 }
-.menu__title__ico {
-  position: absolute;
-  font-size: 1.5rem;
+
+.image-menu img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
 }
-.menu__title__ico:hover, .menu__title__ico:focus {
-  opacity: 0;
-}
-.menu__title__ico--active {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 500ms;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu__title__ico--active:hover, .menu__title__ico--active:focus {
-  opacity: 1;
-}
-.menu__title .card__ico {
-  right: 0px;
-  margin-top: 15px;
+@media screen and (min-width: 992px) {
+  .image-menu img {
+    height: 45vh;
+  }
 }
 
-.dish h3 {
+/*Mise en page des cards*/
+@media screen and (min-width: 992px) {
+  .dish {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.dish .box-dish {
+  min-width: 30%;
+}
+.dish .box-dish h3 {
   line-height: 2.5;
   box-shadow: -9px 16px 0px -9px #99E2D0;
   display: inline;
   font-size: 18px;
 }
 
-.menu-card {
+/*----------Menu-page- Organistaion et animation du contenu des cards plats */
+.dish-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -261,11 +306,11 @@ header .header__logo {
   margin: 18px 0px;
 }
 @media screen and (min-width: 992px) {
-  .menu-card {
+  .dish-card {
     position: relative;
   }
 }
-.menu-card__title {
+.dish-card__title {
   margin: 0.2rem 0.6rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -273,7 +318,7 @@ header .header__logo {
   width: 85%;
   transition: all 500ms ease-in-out;
 }
-.menu-card__byline {
+.dish-card__byline {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -281,7 +326,7 @@ header .header__logo {
   margin: 0.2rem 0.6rem;
   transition: all 500ms ease-in-out;
 }
-.menu-card__price {
+.dish-card__price {
   margin: 0.2rem 0;
   font-weight: bold;
   transform: translate(-5px, 13px);
@@ -289,7 +334,7 @@ header .header__logo {
   position: absolute;
   right: 26px;
 }
-.menu-card__check {
+.dish-card__check {
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -304,7 +349,7 @@ header .header__logo {
   justify-content: center;
   align-items: center;
 }
-.menu-card__check span {
+.dish-card__check span {
   display: inline-block;
   width: 21px;
   height: 22px;
@@ -315,30 +360,20 @@ header .header__logo {
   font-size: 16px;
   transition: transform 500ms ease-out 50ms;
 }
-.menu-card:hover > .menu-card__check {
+.dish-card:hover > .dish-card__check {
   transform: scaleX(1);
 }
-.menu-card:hover > .menu-card__check span {
+.dish-card:hover > .dish-card__check span {
   transform: rotate(360deg);
 }
-.menu-card:hover > .menu-card__price {
+.dish-card:hover > .dish-card__price {
   transform: translate(-60px, 13px);
 }
-.menu-card:hover > .menu-card__title {
+.dish-card:hover > .dish-card__title {
   width: 57%;
 }
-.menu-card:hover > .menu-card__byline {
+.dish-card:hover > .dish-card__byline {
   width: 57%;
-}
-
-@media screen and (min-width: 992px) {
-  .dish {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.dish .box-menu {
-  min-width: 30%;
 }
 
 footer {
@@ -368,6 +403,7 @@ footer .footer__ico {
   width: 25px;
 }
 
+/*-----------Home-page - Section de recherche selon le lieu---------------*/
 #place {
   display: flex;
   justify-content: center;
@@ -382,54 +418,39 @@ footer .footer__ico {
   color: black;
   background-color: #EAEAEA;
   text-align: center;
-  /*&:focus{
+  /*Pour enlever la bordur au clic 
+  &:focus{
       border: none;
       outline: none;
   }*/
 }
 
-#explorer {
+/* --------------Home page - Explorer nos restaurants------------*/
+.explorer {
   background: #F6F6F6;
   text-align: center;
   padding: 12px;
+  /*Bouton dans le dossier components -> _button*/
 }
-#explorer h1 {
+.explorer h1 {
   font-size: 25px;
 }
-#explorer h2 {
+.explorer h2 {
   font-weight: lighter;
   font-size: 18px;
 }
-#explorer .btn-pink {
-  display: inline-block;
-  font-size: 18px;
-  box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
-  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
-  border-radius: 25.5px;
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  width: 220px;
-  height: 51px;
-  border: none;
-  margin-bottom: 46px;
-  transition: all 250ms ease-in-out;
-}
-#explorer .btn-pink:hover {
-  box-shadow: 0px 5px 23px 0px rgba(112, 112, 112, 0.9);
-  opacity: 0.85;
-  transform: scale(1.1);
-}
 
-#start {
+/* -----------------home-page - section sur le Fonctionnement-----------------*/
+/*Mise en page de la section*/
+.start {
   background-color: white;
   padding-top: 25px;
   counter-reset: number;
 }
-#start h3 {
+.start h3 {
   font-size: 25px;
 }
-#start ul {
+.start ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -438,7 +459,8 @@ footer .footer__ico {
   margin-bottom: 50px;
 }
 
-.step li {
+/*Mise en page de la liste des étapes*/
+.step__content {
   display: flex;
   align-items: center;
   gap: 22px;
@@ -452,7 +474,7 @@ footer .footer__ico {
   position: relative;
   margin: 13px 0px 13px 13px;
 }
-.step li::before {
+.step__content::before {
   content: "" counter(number);
   counter-increment: number;
   background-color: #9356DC;
@@ -467,33 +489,33 @@ footer .footer__ico {
   left: -11px;
   font-size: 0.75rem;
 }
-.step li .step__ico {
+.step__content__ico {
   color: grey;
 }
 @media screen and (min-width: 992px) {
-  .step li {
+  .step__content {
     width: 30%;
   }
 }
-.step li:hover {
+.step__content:hover {
   background-color: #F5EDFF;
 }
-.step li:hover .step__ico {
+.step__content:hover .step__ico {
   color: #9356DC;
 }
 
+/*---------Home-page- Section vue des différents restaurants--------------*/
+/*Mise en page de la section*/
 .restaurants {
   background-color: #F6F6F6;
-}
-
-#restaurants {
   padding-top: 30px;
   padding-bottom: 46px;
 }
-#restaurants h3 {
+.restaurants h3 {
   font-size: 25px;
 }
 
+/*Mise en page des cards et du contenu*/
 @media screen and (min-width: 992px) {
   .box__card {
     display: flex;
@@ -501,7 +523,7 @@ footer .footer__ico {
     justify-content: space-around;
   }
 }
-.box__card .card {
+.box__card .home-card {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
@@ -510,20 +532,20 @@ footer .footer__ico {
   position: relative;
 }
 @media screen and (min-width: 992px) {
-  .box__card .card {
+  .box__card .home-card {
     width: 48%;
   }
 }
-.box__card .card__image {
+.box__card .home-card__image {
   height: 175px;
 }
-.box__card .card__image img {
+.box__card .home-card__image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-.box__card .card .image__new {
+.box__card .home-card__image--new {
   background-color: #99E2D0;
   position: absolute;
   font-size: 15px;
@@ -535,14 +557,15 @@ footer .footer__ico {
   height: 29px;
   line-height: 2;
 }
-
-.card__title {
+.box__card .home-card__title {
   margin: 0.6rem;
   font-size: 18px;
 }
-.card__byline {
+.box__card .home-card__byline {
   margin: 0.6rem;
   font-size: 16px;
 }
+
+/*icone et animation "j'aime" = voir dossier: component->animation-heart*/
 
 /*# sourceMappingURL=style.css.map */

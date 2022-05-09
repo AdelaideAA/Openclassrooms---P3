@@ -1,15 +1,17 @@
-#explorer{
+/* --------------Home page - Explorer nos restaurants------------*/
+.explorer {
     background: $white-cream;
     text-align: center;
     padding: 12px;
-    & h1{
-        font-size: map-get($map: $font-size, $key:section-title);
+
+    & h1 {
+        font-size: map-get($map: $font-size, $key: section-title);
     }
-    & h2{
+
+    & h2 {
         font-weight: lighter;
         font-size: map-get($map: $font-size, $key: component-title);
     }
-    & .btn-pink{
-        @include btn-pink;
-    }
+
+    /*Bouton dans le dossier components -> _button*/
 }

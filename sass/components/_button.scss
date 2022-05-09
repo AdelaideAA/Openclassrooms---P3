@@ -1,0 +1,17 @@
+.explorer{
+    &__btn{
+        @include btn-pink;
+    }
+}
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    &__btn{
+        @include btn-pink;
+        margin-bottom: 80px;
+
+    }
+}

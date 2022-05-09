@@ -1,13 +1,18 @@
 $white-cream: #F6F6F6;
 $primary-color: #9356DC;
-$secondary-color:#FF79DA;
+$secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $color-gradient : linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
 
 $box-shadow: 0px 3px 20px 0px rgba(112, 112, 112, 0.6);
 $hover-shadow: 0px 5px 23px 0px rgba(112, 112, 112, 0.9);
 
-$font-size: (restaurant-name:32px, section-title:25px, component-title:18px, basic:16px);
+$font-size: (
+    restaurant-name:32px,
+    section-title:25px,
+    component-title:18px,
+    basic:16px
+);
 
 
 //$breakpoints: (mobile:768px, tablette:992px);

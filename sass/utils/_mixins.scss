@@ -15,7 +15,7 @@
         height: 80px;
     }
 
-    .header__logo {
+    .header-logo {
         width: 165px;
         min-height: 31px;
         margin: auto;
@@ -57,25 +57,26 @@
 }
 
 @mixin heart {
-    &__ico {
+    .heart__ico {
         position: absolute;
         font-size: 1.5rem;
 
-        &:hover, &:focus {
+        &:hover {
             opacity: 0;
         }
-    }
 
-    &__ico--active {
-        position: absolute;
-        opacity: 0;
-        transition: opacity 500ms;
-        background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        &--color {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: opacity 500ms;
+            background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
-        &:hover, &:focus {
-            opacity: 1;
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }

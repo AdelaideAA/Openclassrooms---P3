@@ -1,5 +1,5 @@
-
-.menu-card {
+/*----------Menu-page- Organistaion et animation du contenu des cards plats */
+.dish-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
         position: relative;
     }
 
-    
+
     &__title {
         margin: 0.2rem 0.6rem;
         text-overflow: ellipsis;
@@ -29,7 +29,7 @@
     }
 
     &__byline {
-        
+
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -75,32 +75,25 @@
             transition: transform 500ms ease-out 50ms;
         }
     }
-    &:hover > &__check {
+
+    &:hover>&__check {
         transform: scaleX(1);
 
         span {
             transform: rotate(360deg);
         }
     }
-    &:hover > &__price {
+
+    &:hover>&__price {
         transform: translate(-60px, 13px);
     }
-    &:hover > &__title{
-        width:57% ;
-    }
-    &:hover> &__byline{
+
+    &:hover>&__title {
         width: 57%;
-    }  
-
-}
-
-.dish{
-    @include desktop-only{
-       display: flex;
-       justify-content: space-between; 
     }
-    .box-menu{
-        min-width: 30%;
+
+    &:hover>&__byline {
+        width: 57%;
     }
-    
+
 }

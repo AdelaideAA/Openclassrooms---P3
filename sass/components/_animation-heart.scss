@@ -1,9 +1,28 @@
-.card {
+.home-card {
     @include heart;
-    .card__ico {
+
+    .heart__ico {
         right: 5%;
-        bottom: 32px;
-        
+        bottom: 8%;
+
+        &--color {
+            right: 5%;
+            bottom: 8%;
+
+        }
     }
 }
 
+.layout-menu__title {
+    @include heart;
+
+    .heart__ico {
+        right: 0px;
+        bottom: 35%;
+
+        &--color {
+            right: 0%;
+            bottom: 35%;
+        }
+    }
+}

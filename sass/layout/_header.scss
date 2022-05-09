@@ -1,12 +1,13 @@
-header{
+header {
     @include header;
 }
 
 
-.header__menu{
+.header-menu {
     display: revert;
     font-family: 'Shrikhand', cursive;
-    .conteiner{
-        @include header;   
+
+    .conteiner {
+        @include header;
     }
 }

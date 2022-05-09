@@ -19,9 +19,9 @@
         <div class="load__bar load__bar--4"></div>
         <div class="load__bar load__bar--5"></div>
     </div>
- 
+
     <header>
-        <img src="images/logo/ohmyfood.png" alt="logo-omhyfood" class="header__logo">
+        <img src="images/logo/ohmyfood.png" alt="logo-omhyfood" class="header-logo">
     </header>
 
     <main>
@@ -33,99 +33,94 @@
             </form>
         </div>
 
-        <section id="explorer">
+        <section class="conteiner explorer">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins</h2>
-
-            <button class="btn-pink">Explorer nos restaurants</button>
-
+            <button class="explorer__btn">Explorer nos restaurants</button>
         </section>
-        <div class="conteiner">
-            <section id="start">
-                <h3>Fontionnement</h3>
-                <ul class="step">
-                    <li><i class="fa-solid fa-mobile-screen-button step__ico"></i>Choisissez un restaurant</li>
-                    <li><i class="fa-solid fa-list-ul step__ico"></i>Composez votre menu</li>
-                    <li><i class="fa-solid fa-store step__ico"></i>Dégustez au restaurant</li>
-                </ul>
-            </section>
-        </div>
 
-        <div class="conteiner restaurants">
-            <section id="restaurants">
-                <h3>Restaurants</h3>
-                <div class="box__card">
-                    <article class="card home-card">
-                        <a href="menu/lapalettedesgouts.html">
-                            <div class="card__image">
-                                <img src="images/restaurants/la-palette-du-gout.jpg"
-                                    alt="photo du restaurant la palette du goût">
-                                <span class="image__new">Nouveau</span>
-                            </div>
-                            <h4 class="card__title">La palette du goût</h4>
-                            <p class="card__byline">Ménilmontant</p>
-                            <i class="fa-regular fa-heart card__ico"></i>
-                            <i class="fa-solid fa-heart card__ico card__ico--active"></i>
-                        </a>
-
-                    </article>
-
-                    <article class="card home-card">
-                        <a href="menu/lanoteenhantee.html">
-                            <div class="card__image">
-                                <img src="images/restaurants/la-note-enchantee.jpg"
-                                    alt="photo du restaurant la palette du goût">
-                                <span class="image__new">Nouveau</span>
-                            </div>
-                            <h4 class="card__title">La note enchantée</h4>
-                            <i class="fa-regular fa-heart card__ico"></i>
-                            <i class="fa-solid fa-heart card__ico card__ico--active"></i>
-                            <p class="card__byline">Charonne</p>
-
-                        </a>
-                    </article>
-                    <article class="card home-card">
-                        <a href="menu/alafrancaise.html">
-                            <div class="card__image">
-                                <img src="images/restaurants/a-la-française.jpg"
-                                    alt="photo du restaurant la palette du goût">
-                            </div>
-                            <h4 class="card__title">À la française</h4>
-                            <i class="fa-regular fa-heart card__ico"></i>
-                            <i class="fa-solid fa-heart card__ico card__ico--active"></i>
-                            <p class="card__byline">Cité rouge</p>
-
-                        </a>
-                    </article>
-                    <article class="card home-card">
-                        <a href="menu/ledelicedessens.html">
-                            <div class="card__image">
-                                <img src="images/restaurants/le-delice-des-sens.jpg"
-                                    alt="photo du restaurant la palette du goût">
-                            </div>
-                            <h4 class="card__title">Le délice des sens</h4>
-                            <i class="fa-regular fa-heart card__ico"></i>
-                            <i class="fa-solid fa-heart card__ico card__ico--active"></i>
-                            <p class="card__byline">Folie-Méricourt</p>
-
-                        </a>
-                    </article>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="conteiner">
-            <h2>ohmyfood</h2>
-            <ul>
-                <li><i class="fa-solid fa-utensils footer__ico"></i><a href="#" class="footer__link">Proposer un
-                        restaurants</a></li>
-                <li><i class="fa-solid fa-handshake-simple footer__ico"></i><a href="#" class="footer__link">Devenir
-                        partenaire</a></li>
-                <li><a href="#" class="footer__link">Mentions légales</a></li>
-                <li><a href="mailto:arvatiadelaide@yahoo.fr" class="footer__link">Contact</a></li>
+        <section class="conteiner start">
+            <h3>Fontionnement</h3>
+            <ul class="step">
+                <li class="step__content"><i class="fa-solid fa-mobile-screen-button step__ico"></i>Choisissez un
+                    restaurant</li>
+                <li class="step__content"><i class="fa-solid fa-list-ul step__ico"></i>Composez votre menu</li>
+                <li class="step__content"><i class="fa-solid fa-store step__ico"></i>Dégustez au restaurant</li>
             </ul>
-        </div>
+        </section>
+
+        <section class="conteiner restaurants">
+            <h3>Restaurants</h3>
+            <div class="box__card">
+                <article class="home-card">
+                    <a href="menu/lapalettedesgouts.html">
+                        <div class="home-card__image">
+                            <img src="images/restaurants/la-palette-du-gout.jpg"
+                                alt="photo du restaurant la palette du goût">
+                            <span class="home-card__image--new">Nouveau</span>
+                        </div>
+                        <h4 class="home-card__title">La palette du goût</h4>
+                        <p class="home-card__byline">Ménilmontant</p>
+                        <i class="fa-regular fa-heart heart__ico"></i>
+                        <i class="fa-solid fa-heart heart__ico heart__ico--color"></i>
+                    </a>
+                </article>
+
+                <article class="home-card">
+                    <a href="menu/lanoteenhantee.html">
+                        <div class="home-card__image">
+                            <img src="images/restaurants/la-note-enchantee.jpg"
+                                alt="photo du restaurant la palette du goût">
+                            <span class="home-card__image--new">Nouveau</span>
+                        </div>
+                        <h4 class="home-card__title">La note enchantée</h4>
+                        <p class="home-card__byline">Charonne</p>
+                        <i class="fa-regular fa-heart heart__ico"></i>
+                        <i class="fa-solid fa-heart heart__ico heart__ico--color"></i>
+                    </a>
+                </article>
+
+                <article class="home-card">
+                    <a href="menu/alafrancaise.html">
+                        <div class="home-card__image">
+                            <img src="images/restaurants/a-la-française.jpg"
+                                alt="photo du restaurant la palette du goût">
+                        </div>
+                        <h4 class="home-card__title">À la française</h4>
+                        <p class="home-card__byline">Cité rouge</p>
+                        <i class="fa-regular fa-heart heart__ico"></i>
+                        <i class="fa-solid fa-heart heart__ico heart__ico--color"></i>
+
+                    </a>
+                </article>
+
+                <article class="home-card">
+                    <a href="menu/ledelicedessens.html">
+                        <div class="home-card__image">
+                            <img src="images/restaurants/le-delice-des-sens.jpg"
+                                alt="photo du restaurant la palette du goût">
+                        </div>
+                        <h4 class="home-card__title">Le délice des sens</h4>
+                        <p class="home-card__byline">Folie-Méricourt</p>
+                        <i class="fa-regular fa-heart heart__ico"></i>
+                        <i class="fa-solid fa-heart heart__ico heart__ico--color"></i>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="conteiner">
+        <h2>ohmyfood</h2>
+        <ul>
+            <li><i class="fa-solid fa-utensils footer__ico"></i><a href="#" class="footer__link">Proposer un
+                    restaurants</a></li>
+            <li><i class="fa-solid fa-handshake-simple footer__ico"></i><a href="#" class="footer__link">Devenir
+                    partenaire</a></li>
+            <li><a href="#" class="footer__link">Mentions légales</a></li>
+            <li><a href="mailto:arvatiadelaide@yahoo.fr" class="footer__link">Contact</a></li>
+        </ul>
     </footer>
 
 </body>
